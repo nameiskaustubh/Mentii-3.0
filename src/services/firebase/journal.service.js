@@ -11,7 +11,8 @@ import {
   doc,
   serverTimestamp,
 } from 'firebase/firestore';
-import { db } from './config/firebase';
+// import { db } from './config/firebase';
+import { db } from '../../config/firebase';
 
 export const addJournalEntry = async (userId, data) => {
   const ref = await addDoc(collection(db, 'journal_entries'), {

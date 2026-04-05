@@ -5,7 +5,8 @@ import {
   serverTimestamp,
 } from 'firebase/firestore';
 import { updateProfile } from 'firebase/auth';
-import { auth, db } from './config/firebase';
+// import { auth, db } from './config/firebase';
+import { auth, db } from '../../config/firebase';
 
 export const fetchUserProfile = async (uid) => {
   const snap = await getDoc(doc(db, 'users', uid));
